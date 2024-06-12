@@ -1,6 +1,3 @@
 aks/.terraform
 flux/.terraform
 vnet/.terraform
-aks/.terraform.lock.hcl
-flux/.terraform.lock.hcl
-vnet/.terraform.lock.hcl
