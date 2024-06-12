@@ -25,10 +25,10 @@ module "cluster" {
   node_os_channel_upgrade = "NodeImage"
 
   # Cluster system pool
-  agents_availability_zones = [1, 2, 3]
+  agents_availability_zones = [1, 2]
   enable_auto_scaling       = true
-  agents_max_count          = 4
-  agents_min_count          = 3
+  agents_max_count          = 2
+  agents_min_count          = 1
 
   # Cluster networking
   vnet_subnet_id = var.vnet_subnet_id
@@ -40,10 +40,10 @@ module "cluster" {
       name                = "pool1"
       vm_size             = "Standard_DS3_v2"
       enable_auto_scaling = true
-      max_count           = 4
+      max_count           = 2
       min_count           = 1
       vnet_subnet_id      = var.vnet_subnet_id
-      zones               = [1, 2, 3]
+      zones               = [1, 2]
     }
   }
 
