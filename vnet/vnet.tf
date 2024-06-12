@@ -17,5 +17,5 @@ resource "azurerm_subnet" "az-subnet" {
   name                 = "AzureSubnet"
   virtual_network_name = azurerm_virtual_network.az-vnet.name
   resource_group_name  = azurerm_resource_group.main.name
-  address_prefixes     = ["10.30.1.0/24"]
+  address_prefixes     = ["10.30.1.0/16"]
 }
