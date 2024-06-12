@@ -20,5 +20,5 @@ resource "azurerm_virtual_network" "az-vnet" {
 data "azurerm_subnet" "az-subnet" {
   name                 = "AzureSubnet"
   virtual_network_name = azurerm_virtual_network.az-vnet.name
-  resource_group_name  = azurerm_resource_group.workflow-rg.name
+  resource_group_name  = azurerm_resource_group.main.name
 }
