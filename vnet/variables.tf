@@ -2,7 +2,7 @@ variable location {
   type        = string
   default     = "East US"
 }
-variable env {
+variable environment {
   type = string
   default = "workflow"
 }

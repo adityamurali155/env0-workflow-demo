@@ -2,7 +2,7 @@ provider "azurerm" {
     features {}
 }
 resource "azurerm_resource_group" "main" {
-  name     = "Workflow-Resources"
+  name     = "${var.environment}-vnet-env"
   location = var.location
 }
 
