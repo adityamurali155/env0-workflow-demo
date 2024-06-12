@@ -1,0 +1,14 @@
+environments:
+  vnet: 
+    name: 'Virtual Network'
+    templateName: 'Virtual Network'
+  aks:
+    name: 'AKS Cluster'
+    templateName: 'AKS Cluster'
+    needs:
+      - vnet
+  flux:
+    name: 'Flux Installation'
+    templateName: 'FluxCD'
+    needs:
+      - aks
