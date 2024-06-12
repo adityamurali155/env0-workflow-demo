@@ -1,5 +1,5 @@
 output aks_subnet_id {
-  value       = data.azurerm_subnet.az-subnet.id
+  value       = azurerm_subnet.az-subnet.id
   description = "Subnet ID to deploy AKS cluster into"
 }
 output "vnet_id" {
