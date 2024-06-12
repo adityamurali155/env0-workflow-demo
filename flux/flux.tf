@@ -1,9 +1,9 @@
 provider "helm" {
   kubernetes {
-    host                   = "https://${var.cluster_fqdn}"
-    client_certificate     = base64decode(var.client_certificate)
-    client_key             = base64decode(var.client_key)
-    cluster_ca_certificate = base64decode(var.cluster_ca_certificate)
+    host                   = "https://${var.aks_cluster_fqdn}"
+    client_certificate     = base64decode(var.aks_client_certificate)
+    client_key             = base64decode(var.aks_client_key)
+    cluster_ca_certificate = base64decode(var.aks_cluster_ca_certificate)
   }
 }
 
